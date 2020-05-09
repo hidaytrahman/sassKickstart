@@ -1,0 +1,247 @@
+  /* Buttons */
+  button {
+    &.button {
+      @include rounded-corner($radius-button);
+      display: inline-block;
+      padding: 10px 19px;
+      font-size: $base-font-size;
+      color: $btn-color;
+      border: 1px solid $btn-color;
+      margin: 5px 0;
+      background: transparent;
+      min-width: $btn-min-width;
+      outline: none;
+      text-transform: none !important;
+
+      @include transition(.3s ease);
+
+      &:disabled {
+        @extend %disabled;
+      }
+
+      &.primary {
+        background: $btn-color;
+        color: $white-color;
+
+        &:hover {
+          background: $btn-color-dark;
+          color: $white-color;
+        }
+
+        &:disabled {
+          @extend %disabled;
+          border-color: transparent;
+          color: $white-color;
+        }
+      }
+
+      &.secondary {
+        background: $btn-secondary-bg;
+        color: $btn-secondary-color;
+        border-color: $btn-secondary-border-color;
+        min-width: auto;
+
+        &:hover {
+          background: $btn-secondary-bg-hover;
+          border-color: transparent;
+          color: $base-font-color;
+        }
+      }
+
+      &.large {
+        font-size: 1.3rem;
+      }
+
+      &.small {
+        font-size: 0.8rem;
+      }
+
+      &.fluid {
+        @extend %full-width;
+      }
+
+      &:hover {
+        border-color: $btn-color-dark;
+        color: $btn-color-dark;
+      }
+    }
+  }
+
+
+  /* INPUT - text, email, number, file */
+
+  input {
+    &.input {
+
+      background: $white-color;
+      border: 1px solid $dark-gray-color;
+      @include rounded-corner($radius-input);
+      font-size: $base-font-size;
+      padding: 8px 8px;
+      color: $dark-gray-color;
+      margin: 5px 0;
+
+      &.with-space {}
+
+      &.type-text {}
+
+      &.fluid {
+        @extend %full-width;
+      }
+    }
+  }
+
+
+  /* Dropdown */
+  .select {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 15px;
+    min-width: 200px;
+
+    select {
+      display: inline-block;
+      width: 100%;
+      cursor: pointer;
+      padding: 10px 15px;
+      outline: 0;
+      border: 0;
+      @include rounded-corner(8px);
+      border: 1px solid $btn-secondary-border-color;
+      color: $form-element-color-blue;
+      appearance: none;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      box-sizing: border-box;
+
+      &:hover,
+      &:focus {
+        border: 1px solid $btn-secondary-bg-hover;
+      }
+
+      &:disabled {
+        @extend %disabled;
+
+        &~.select__arrow {
+          border-color: $dark-gray-color transparent transparent transparent;
+        }
+      }
+
+      
+
+      &::-ms-expand {
+        display: none;
+      }
+    }
+
+    .select__arrow {
+      position: absolute;
+      top: 16px;
+      right: 15px;
+      width: 0;
+      height: 0;
+      pointer-events: none;
+      border-style: solid;
+      border-width: 8px 5px 0 5px;
+      border-color: $heading-color-light transparent transparent transparent;
+    }
+
+  }
+
+
+  /* Checkbox and radio */
+  .control {
+    display: block;
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 15px;
+    padding-top: 6px;
+    cursor: pointer;
+
+    &:hover input~.control__indicator,
+    input:focus~.control__indicator {
+      background: $btn-secondary-bg-hover;
+    }
+
+
+    &:hover input:not([disabled]):checked~.control__indicator,
+    input:checked:focus~.control__indicator {
+      background: $btn-color-dark;
+    }
+
+    input {
+      position: absolute;
+      z-index: -1;
+      opacity: 0;
+
+      &:checked~.control__indicator {
+        background: $btn-color;
+      }
+
+      &:disabled~.control__indicator {
+        background: $btn-secondary-bg;
+        opacity: 0.6;
+        pointer-events: none;
+      }
+
+
+
+      &:checked~.control__indicator:after {
+        display: block;
+      }
+    }
+
+    .control__indicator {
+      position: absolute;
+      top: 2px;
+      left: 0;
+      height: 20px;
+      width: 20px;
+      background: $btn-secondary-bg;
+      @include rounded-corner(5px);
+
+      &:after {
+        content: '';
+        position: absolute;
+        display: none;
+      }
+    }
+
+    &.control--radio {
+      .control__indicator {
+        @include rounded-corner(50%);
+
+        &:after {
+          left: 7px;
+          top: 7px;
+          height: 6px;
+          width: 6px;
+          @include rounded-corner(50%);
+
+          background: $white-color;
+        }
+      }
+
+
+      input:disabled~.control__indicator:after {
+        background: $disabled-color;
+      }
+    }
+
+    &.control--checkbox {
+      .control__indicator:after {
+        left: 8px;
+        top: 4px;
+        width: 3px;
+        height: 8px;
+        border: solid $white-color;
+        border-width: 0 2px 2px 0;
+        @include transform(rotate(45deg));
+      }
+
+      input:disabled~.control__indicator:after {
+        border-color: $disabled-color;
+      }
+    }
+
+  }

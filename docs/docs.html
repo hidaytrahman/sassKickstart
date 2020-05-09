@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SASS Kickstart</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+    <main class="your-app-kickstart">
+        <header>
+            <div class="container">
+                <div class="logo">
+                    <img src="./resources/images/sass.png" alt="">
+                </div>
+                <div class="brief">
+                    <h1>Docs</h1>
+                </div>
+            </div>
+
+
+        </header>
+
+        <hr>
+
+        <article>
+            <section class="container">
+                <h1 class="example-heading">Typography</h1>
+                <h1 class="padding-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h1>
+                <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
+                <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
+                <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
+                <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h5>
+                <h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h6>
+
+                <hr>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ut dui pulvinar, tincidunt est at,
+                    posuere risus. Etiam maximus, ligula eget aliquam imperdiet, nibh massa vehicula tortor, in mollis
+                    turpis elit et lacus. Etiam ac condimentum purus. Duis id congue turpis, non eleifend elit. Duis
+                    viverra purus sed eros ultrices, eu varius ante consequat. Etiam tempor eu eros suscipit ultricies.
+                    Donec quis vulputate diam. <br>
+                    Nullam vitae erat maximus, tempus ex vel, sagittis erat. Maecenas tristique elit euismod tellus
+                    aliquet, id laoreet ex hendrerit. Suspendisse imperdiet egestas faucibus. Donec tempor tempus ipsum
+                    ut condimentum. Sed augue eros, venenatis id elit sit amet, rutrum porttitor tortor. Nullam sit amet
+                    volutpat purus. Nullam diam leo, venenatis vel eros non, faucibus ullamcorper quam. Fusce justo
+                    nisl, semper non nulla at, pellentesque porta augue. Sed eleifend augue non fermentum feugiat.</p>
+                <p>Mauris et interdum felis. Etiam luctus erat nec ligula pellentesque, in pretium urna cursus. Maecenas
+                    eleifend quam a pretium ornare. Sed sed lectus tincidunt, cursus ante non, ultricies sem.
+                    Pellentesque nisi lectus, auctor vel porttitor nec, dignissim id nunc. Mauris laoreet consectetur
+                    ligula id aliquet. Suspendisse potenti.</p>
+
+                <hr>
+
+                <ol>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                    <li>Vestibulum non urna gravida,<strong>amet, consectetur adipiscing</strong> posuere sem eu,
+                        finibus nibh.</li>
+                    <li>Curabitur pharetra ipsum eu ipsum pulvinar, id convallis ligula malesuada.</li>
+                    <li>Nunc tincidunt nunc sit amet erat fermentum porttitor.</li>
+                    <li>Suspendisse ac nibh quis dolor malesuada laoreet at eu arcu.</li>
+                </ol>
+
+                <hr>
+
+                <ul>
+                    <li>Lorem ipsum dolor sit <strong>amet, consectetur adipiscing</strong> elit.</li>
+                    <li>Vestibulum non urna gravida, posuere sem eu, finibus nibh.</li>
+                    <li>Curabitur pharetra ipsum eu ipsum pulvinar, id convallis ligula malesuada.</li>
+                    <li>Nunc tincidunt nunc sit amet erat fermentum porttitor.</li>
+                    <li>Suspendisse ac nibh quis dolor malesuada laoreet at eu arcu.</li>
+                </ul>
+
+
+                <hr>
+                <h3>Notification - Error, Success, Warning</h3>
+                <h4>Basic</h4>
+                <div class="message error">
+                    <p>Vestibulum ante ipsum primis in <strong>faucibus orci luctus et ultrices posuere cubilia Curae;
+                        </strong>In eleifend, eros in molestie condimentum</p>
+                </div>
+
+                <div class="message success">
+                    <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In
+                        eleifend, eros in molestie condimentum</p>
+                </div>
+
+                <div class="message warning">
+                    <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In
+                        eleifend, eros in molestie condimentum</p>
+                </div>
+
+                <div class="message">
+                    <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In
+                        eleifend, eros in molestie condimentum</p>
+                </div>
+
+
+                <h4>With title</h4>
+                <div class="message error">
+                    <strong>Oops!! Something went wrong</strong>
+                    <p>Vestibulum ante ipsum primis in <strong>faucibus orci luctus et ultrices posuere cubilia Curae;
+                        </strong>In eleifend, eros in molestie condimentum</p>
+                </div>
+
+                <div class="message success">
+                    <strong>Succefully Registered</strong>
+                    <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In
+                        eleifend, eros in molestie condimentum</p>
+                </div>
+
+                <div class="message warning">
+                    <strong>You are about to log out</strong>
+                    <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In
+                        eleifend, eros in molestie condimentum</p>
+                </div>
+
+                <div class="message">
+                    <strong>Hello World!</strong>
+                    <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In
+                        eleifend, eros in molestie condimentum</p>
+                </div>
+
+
+            </section>
+
+            <section class="formElements container">
+                <h1 class="example-heading">Form Elements</h1>
+                <h3>Buttons</h3>
+                <button class="button">Button</button>
+                <button class="button" disabled>Button disabled</button>
+                <button class="button large">Button large</button>
+                <button class="button small">Button small</button>
+                <h4>Buttons (primary)</h4>
+                <button class="button primary">Button primary</button>
+                <button class="button primary" disabled>Button primary disabled</button>
+                <button class="button primary large">Button primary large</button>
+                <button class="button primary small">Button primary small</button>
+
+                <h4>Buttons (secondary)</h4>
+                <button class="button secondary">Button secondary</button>
+                <button class="button secondary" disabled>Button secondary disabled</button>
+                <button class="button secondary large">Button secondary large</button>
+                <button class="button secondary small">Button secondary small</button>
+
+                <h4>Buttons fluid (full-width)</h4>
+                <button class="button fluid">Button fluid</button>
+                <button class="button fluid" disabled>Button fluid</button>
+                <button class="button primary fluid">Button primary fluid</button>
+                <button class="button primary small fluid">Button primary small fluid</button>
+                <button class="button primary large fluid" disabled>Button primary large fluid disabled</button>
+                <button class="button secondary fluid">Button secondary</button>
+                <button class="button secondary fluid" disabled>Button secondary disabled</button>
+
+                <hr>
+                <h3>anchor</h3>
+                <a href="#" class="button" title="">Basic link</a>
+                <p>this is with paragraoh<a href="as" title="">terms and conditions</a> ending text.</p>
+
+
+                <hr>
+
+                <h3>Input</h3>
+                <div class="inputs">
+
+                    <h4>Type text, number, email</h4>
+                    <input type="text" class="input type-text" placeholder="this is text">
+                    <br>
+                    <input type="number" class="input type-number" placeholder="this is number">
+                    <br>
+
+                    <input type="text" class="input type-number" placeholder="this is number type text"><br>
+                    <input type="email" class="input type-email" placeholder="this is email"><br>
+
+                    <br>
+
+                    <h4>Type text, number, email - fluid</h4>
+                    <input type="text" class="input type-text fluid" placeholder="this is text">
+                    <br>
+                    <input type="number" class="input type-number fluid" placeholder="this is number">
+                    <br>
+
+                    <input type="text" class="input type-number fluid" placeholder="this is number type text"><br>
+                    <input type="email" class="input type-email fluid" placeholder="this is email"><br>
+
+                    <hr>
+
+                    <h4>example of checkbox and radio</h4>
+
+                    <label class="control control--checkbox"> I have read and accept the declaration.
+                        <input type="checkbox" checked="checked" />
+                        <div class="control__indicator"></div>
+                    </label>
+
+                    <label class="control control--radio">Male :
+                        <input type="radio" name="radio" checked="checked" />
+                        <div class="control__indicator"></div>
+                    </label>
+                    <label class="control control--radio">Female :
+                        <input type="radio" name="radio" checked="checked" />
+                        <div class="control__indicator"></div>
+                    </label>
+                    <br><br>
+
+
+
+                    <hr>
+                    <div class="control-groups">
+                        <h4>Checkboxes</h4>
+                        <label class="control control--checkbox">First checkbox
+                            <input type="checkbox" checked="checked" />
+                            <div class="control__indicator"></div>
+                        </label>
+                        <label class="control control--checkbox">Second checkbox
+                            <input type="checkbox" />
+                            <div class="control__indicator"></div>
+                        </label>
+                        <label class="control control--checkbox">Disabled
+                            <input type="checkbox" disabled="disabled" />
+                            <div class="control__indicator"></div>
+                        </label>
+                        <label class="control control--checkbox">Disabled & checked
+                            <input type="checkbox" disabled="disabled" checked="checked" />
+                            <div class="control__indicator"></div>
+                        </label>
+                    </div>
+
+                    <div class="control-groups">
+                        <h4>Radio buttons</h4>
+                        <label class="control control--radio">First radio
+                            <input type="radio" name="radio" checked="checked" />
+                            <div class="control__indicator"></div>
+                        </label>
+                        <label class="control control--radio">Second radio
+                            <input type="radio" name="radio" />
+                            <div class="control__indicator"></div>
+                        </label>
+                        <label class="control control--radio">Disabled
+                            <input type="radio" name="radio2" disabled="disabled" />
+                            <div class="control__indicator"></div>
+                        </label>
+                        <label class="control control--radio">Disabled & checked
+                            <input type="radio" name="radio2" disabled="disabled" checked="checked" />
+                            <div class="control__indicator"></div>
+                        </label>
+                    </div>
+
+
+                    <div class="control-groups">
+                        <h4>Select boxes</h4>
+                        <div class="select">
+                            <select>
+                                <option>First select</option>
+                                <option>Option</option>
+                                <option>Option</option>
+                            </select>
+                            <div class="select__arrow"></div>
+                        </div>
+                        <div class="select">
+                            <select>
+                                <option>Second select</option>
+                                <option>Option</option>
+                                <option>Option</option>
+                            </select>
+                            <div class="select__arrow"></div>
+                        </div>
+                        <div class="select">
+                            <select disabled="disabled">
+                                <option>Disabled</option>
+                                <option>Option</option>
+                                <option>Option</option>
+                            </select>
+                            <div class="select__arrow"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Form elements end here -->
+
+        </article>
+
+        <footer>
+            developed by hidayt
+        </footer>
+    </main>
+</body>
+
+</html>

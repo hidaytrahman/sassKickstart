@@ -1,0 +1,96 @@
+/* ------------ divider Classes ------------ */
+@for $i from $utilityLoopStart through $utilityLoopEnd {
+    .divider-#{$i} {
+        height: #{$i}px;
+    }
+}
+
+/* ------------ Margin Classes ------------ */
+
+
+
+/* ------------ Margin Classes ------------ */
+@for $i from $utilityLoopStart through $utilityLoopEnd {
+    .margin-#{$i} {
+        margin: #{$i}px;
+    }
+
+    .margin-top-#{$i} {
+        margin-top: #{$i}px;
+    }
+
+    .margin-right-#{$i} {
+        margin-right: #{$i}px;
+    }
+
+    .margin-bottom-#{$i} {
+        margin-bottom: #{$i}px;
+    }
+
+    .margin-left-#{$i} {
+        margin-left: #{$i}px;
+    }
+}
+
+/* ------------ Margin Classes ------------ */
+
+
+
+/* ------------ Padding Classes ------------ */
+@for $i from $utilityLoopStart through $utilityLoopEnd {
+    .padding-#{$i} {
+        padding: #{$i}px;
+    }
+
+    .padding-top-#{$i} {
+        padding-top: #{$i}px;
+    }
+
+    .padding-right-#{$i} {
+        padding-right: #{$i}px;
+    }
+
+    .padding-bottom-#{$i} {
+        padding-bottom: #{$i}px;
+    }
+
+    .padding-left-#{$i} {
+        padding-left: #{$i}px;
+    }
+}
+
+/* ------------ Padding Classes ------------ */
+
+
+
+
+/* ------------ Alignments Classes ------------ */
+.text-centre,
+// British or US English spellings..
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+
+// https://justmarkup.com/log/2015/07/dealing-with-long-words-in-css/
+.hyphenate {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    hyphens: auto;
+}
+
+.mobile-show-block {
+    display: none;
+}
+
+.mobile-show-flex {
+    display: none;
+}

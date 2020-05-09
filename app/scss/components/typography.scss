@@ -1,0 +1,132 @@
+img {
+    width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 1.5rem 0;
+    font-weight: 500;
+    color: $heading-color-dark;
+}
+
+h1 {
+    font-size: $heading-xxlarge;
+    line-height: $base-line-height*3;
+}
+
+h2 {
+    color: $heading-color-light;
+    font-size: $heading-xlarge;
+    line-height: $base-line-height*2;
+}
+
+
+h3 {
+    color: $heading-color-dark;
+    font-size: $heading-large;
+    line-height: $base-line-height+.5;
+}
+
+
+h4 {
+    font-size: $heading-medium;
+    line-height: $base-line-height+.2;
+}
+
+
+h5 {
+    font-size: $heading-small;
+    line-height: $base-line-height+.1;
+}
+
+h6 {
+    font-size: $heading-xsmall;
+    line-height: $base-line-height;
+}
+
+// Only give these headings a margin-top if they are after other elements
+* + h1,
+* + .h1,
+* + h2,
+* + .h2,
+* + h3,
+* + .h3,
+* + h4,
+* + .h4 {
+	margin-top: $base-margin;
+}
+
+a {
+    color: $primary-color;
+    font-size: $base-font-size;
+
+    &:hover {
+        color: $primary-color-dark;
+        
+    }
+}
+
+
+hr {
+    border: 0;
+    height: 2px;
+    background: $base-font-color;
+    background-image: linear-gradient(to right, $gray-color, $base-font-color, $gray-color);
+    margin: 1rem 0;
+}
+
+
+p {
+    @extend %base-para-style;
+}
+
+ul,
+ol {
+    padding-left: 1rem;
+}
+
+li {
+    @extend %base-para-style;
+}
+
+strong,
+b {
+    font-weight: 600;
+}
+
+em,
+i {
+	font-style: italic;
+}
+
+// Abbreviations and acronyms
+abbr[title] {
+	border-bottom: 1px dotted #ddd;
+	cursor: help;
+}
+
+
+// Quotes
+q,
+blockquote {
+	&::before,
+	&::after {
+		content: "";
+	}
+}
+
+
+cite {
+	font-style: normal;
+}
+
+// Addresses styling not present in IE6/7/8/9
+mark {
+	background: $message-warning-color;
+	padding: 2px 4px;
+	border-radius: 3px;
+}

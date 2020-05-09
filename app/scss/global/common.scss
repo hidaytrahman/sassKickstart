@@ -1,0 +1,47 @@
+svg {
+    &.custom-svg {
+    }
+}
+
+.icon {
+    &.icon-small {
+        width: 25px;
+    }
+}
+
+
+.container {
+    max-width: $container-width;
+    @include center-block;
+}
+
+
+.flex-wrap {
+    display: flex;
+    width: 100%;
+    flex-flow: row wrap;
+}
+
+.bordered-block {
+    border: 1px solid $section-border-color;
+    @include rounded-corner(8px);
+    padding: 0 15px 15px;
+}
+
+/* Accessibility */
+*:focus {
+    outline: $accessibility-color dotted 1px;
+}
+
+/* Responsive styling starts here */
+@include screen(tablet-lg) {
+    .page-content-wrapper {
+        width: 80%;
+    }
+}
+
+@include screen(mobile) {
+
+}
+
+/* Responsive styling ends here */

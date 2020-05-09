@@ -1,0 +1,19 @@
+.error-container {
+    position: fixed;
+    top: 11vh;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    max-width: 600px;
+    background: #fafafa;
+    max-height: 259px;
+    box-shadow: 2px 0px 12px 0px #ccc;
+    padding: 19px;
+    border: 5px solid #ffffff;
+    border-radius: 9px;
+
+    &.generic-error {
+        max-height: 150px;
+    }
+}

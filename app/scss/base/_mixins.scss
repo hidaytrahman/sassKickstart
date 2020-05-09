@@ -1,0 +1,176 @@
+@mixin disabled {
+  opacity: 0.5;
+  pointer-events: none;
+  cursor: not-allowed;
+  color: $dark-gray-color;
+  border-color: $dark-gray-color;
+}
+
+
+/* -------------------- UTILS MIXINS -------------------- */
+
+//  [USE_CASE] :  rounded-corner(50px)
+@mixin rounded-corner($arc) {
+  -moz-border-radius: $arc;
+  -webkit-border-radius: $arc;
+  border-radius: $arc;
+}
+
+//  [USE_CASE] : .class { @include transition(color .3s ease); }
+@mixin transition($args...) {
+  -webkit-transition: $args;
+  -moz-transition: $args;
+  -ms-transition: $args;
+  -o-transition: $args;
+  transition: $args;
+}
+
+
+// transform core
+//  [USE_CASE] : .class { @include transform(rotate(30deg)); }
+@mixin transform($property) {
+  -webkit-transform: $property;
+  -ms-transform: $property;
+  transform: $property;
+}
+
+
+// Contain floats / clearfix
+// [USE_CASE] : tag { @include clearfix;}
+@mixin clearfix {
+
+  &::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}
+
+/* UTILS MIXINS */
+
+
+// Hide from both screenreaders and browsers
+@mixin hidden {
+  display: none;
+  visibility: hidden;
+}
+
+// CSS Opacity with fallback for IE8+
+// [USE_CASE] : .fade { @include opacity(.4);}
+@mixin opacity($opacity) {
+  opacity: $opacity;
+  $opacity-ie: $opacity * 100;
+  filter: alpha(opacity=$opacity-ie); //IE8
+}
+
+//  rem units with pixel fallback.
+// [USE_CASE] :  tag { @include font-size(15);}
+@mixin font-size($size, $base: 16) {
+  font-size: $size+px; // fallback for old browsers
+  font-size: ($size / $base) * 1rem;
+}
+
+
+
+// @font-face
+// [USE_CASE] :  @include font-face("MyFont", "path/to/MyFont", $style: normal, $weight: normal);
+@mixin font-face($font-name, $file-name, $weight: normal, $style: normal) {
+  @font-face {
+    font-family: quote($font-name);
+    src: url($file-name + '.eot');
+    src: url($file-name + '.eot?#iefix') format('embedded-opentype'),
+    url($file-name + '.woff') format('woff'),
+    url($file-name + '.ttf') format('truetype'),
+    url($file-name + '.svg##{$font-name}') format('svg');
+    font-weight: $weight;
+    font-style: $style;
+  }
+}
+
+
+// Centering a block //
+// [USE_CASE] :  .wrapper {   @include center-block;}
+@mixin center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+// Vendor prefixing //
+// [USE_CASE] : html { @include prefix('box-sizing', 'border-box', moz webkit); }
+@mixin prefix($property, $value, $vendors: webkit moz ms o, $default: true) {
+  @if $vendors {
+    @each $vendor in $vendors {
+      #{"-" + $vendor + "-" + $property}: #{$value};
+    }
+  }
+
+  @if $default {
+    #{$property}: #{$value};
+  }
+}
+
+
+// Vertical centering //
+@mixin center-vertically {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  @include prefix(transform, translate(-50%, -50%), 'webkit''ms');
+}
+
+// BOX SHADOW //
+@mixin box-shadow($args) {
+  -moz-box-shadow: $args;
+  -webkit-box-shadow: $args;
+  box-shadow: $args;
+
+}
+
+/* [USE_CASE] :
+  .wrapper {
+    width: 100%;
+    @include screen('tablet') {
+        width: 90%;
+    }
+}
+
+We have to upgrade it according to our use cases
+*/
+@mixin screen($size) {
+  $desktop: "(min-width: 1366px)";
+  $tablet-lg: "(min-width: 768px) and (max-width: 991px)";
+  $tablet: "(min-width: 768px) and (max-width: 1365px)";
+  $mobile: "(max-width: 767px)";
+
+  @if $size==desktop {
+    @media only screen and #{$desktop} {
+      @content;
+    }
+  }
+
+  @else if $size==tablet-lg {
+    @media only screen and #{$tablet-lg} {
+      @content;
+    }
+  }
+
+  @else if $size==tablet {
+    @media only screen and #{$tablet} {
+      @content;
+    }
+  }
+
+  @else if $size==mobile {
+    @media only screen and #{$mobile} {
+      @content;
+    }
+  }
+
+  @else {
+    @media only screen and #{$size} {
+      @content;
+    }
+  }
+}

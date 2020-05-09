@@ -1,0 +1,47 @@
+
+
+/*
+NOT SUPPORTED
+USe case
+%bg-image {
+    width: 100%;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.image-one {
+    @extend %bg-image;
+    background-image:url(/img/image-one.jpg");
+}
+*/
+
+
+%disabled {
+    opacity: 0.5;
+    pointer-events: none;
+    cursor: not-allowed;
+    color: $dark-gray-color;
+    border-color: $dark-gray-color;
+}
+
+/* paragraph, li etc */
+%base-para-style {
+    font-size: $base-font-size;
+    color: $base-font-color;
+    line-height: $base-line-height+.6;
+    margin: 0.7rem 0;
+}
+
+%full-width {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Messages for error, success, warning */
+%message-shared {
+    border: 1px solid $gray-color;
+    padding: 10px;
+    color: $base-font-color;;
+    margin: 0.5rem 0;
+ }

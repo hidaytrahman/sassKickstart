@@ -1,0 +1,97 @@
+// --- Colors --- //
+$primary-color: #0076B6;
+$primary-color-dark: darken($primary-color, 20);
+$white-color: #ffffff;
+$gray-color: #F7F7F7;
+$light-gray-color: #eaeaea;
+
+$dark-gray-color: #909090;
+$base-font-color: #333333;
+
+$heading-color-dark: #00395D;
+$heading-color-light: #0074A6;
+$heading-line-color: #00AEEF;
+$heading-line-position: 1rem;
+$banner-bg-color: #F2FBFE;
+
+$btn-color: #0e93c9;
+$btn-color-dark: $heading-color-dark;
+$btn-secondary-bg: #F7F7F7;
+$btn-secondary-bg-hover: darken($btn-secondary-bg, 20%);
+$btn-secondary-border-color: #D9D9D9;
+$btn-secondary-color: #666666;
+$disabled-color: #666666;
+
+$message-error-color: red;
+$message-error-light: lighten($message-error-color, 40%);
+$message-success-color: green;
+$message-success-light: lighten($message-success-color, 70%);
+$message-warning-color: yellow;
+$message-warning-light: lighten($message-warning-color, 40%);
+
+$form-element-color-blue: $heading-color-light;
+
+$section-border-color: #EBE7E4;
+
+$designer-panel-bg: #f7f5f4;
+$overlay-bg: #fbfaf9;
+$accessibility-color: #0074A6;
+
+$svg-bg: #d0e6f0;
+$svg-bg-transparent: transparent;
+$svg-stroke-color: #0074A6;
+$svg-stroke-line-width: 1.5px;
+$svg-stroke-circle-width: 0.75px;
+
+
+// --- SIZES --- //
+
+$base-margin: 1rem; 
+$font-size-large: 1.2rem;
+$base-font-size: 0.9rem;
+$base-line-height: 1rem;
+$font-size-small: 0.9rem;
+
+$heading-xxlarge: 2.5rem;
+$heading-xlarge: 1.7rem;
+$heading-large: 1.6rem;
+$heading-medium: 1.3rem;
+$heading-small: 1.1rem;
+$heading-xsmall: 0.8rem;
+
+$banner-font-size: 2.5rem;
+$banner-title-max-width: 392px;
+$banner-padding: 2rem;
+
+// Responsive  //
+$layout-max-width: 1600px;
+$layout-banner-width: 1400px;
+$container-width: 1024px;
+$mobile-max-width: 1024px;
+$tablet-max-width: 1366px;
+
+$desktop-large-width: 1900px;
+$desktop-medium-width: 1600px;
+$desktop-small-width: 1366px;
+$desktop-width: 1400px;
+
+// Path
+$path: "../resources/";
+$path-img: "#{$path}img/";
+$path-font: "#{$path}fonts/";;
+
+
+// Utilities //
+$radius-button: 50px;
+$radius-tab: 5px;
+$radius-input: 8px;
+$btn-min-width: 150px;
+
+/* TODO:  CUSTOM FONT*/
+$font-primary: Jost-Regular; 
+$font-secondary: Arial, Helvetica, sans-serif;
+
+
+// --- Number and Units ---- // 
+$utilityLoopEnd: 200;
+$utilityLoopStart: 1;
