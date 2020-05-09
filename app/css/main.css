@@ -488,8 +488,7 @@ body {
   /* Accessibility */
   /* Responsive styling starts here */
   /* Responsive styling ends here */
-  /* ------- Page Specific Styles -------*/
-  /* Responsive styling starts here */ }
+  /* ------- Page Specific Styles -------*/ }
   .your-app-kickstart .divider-1 {
     height: 1px; }
   .your-app-kickstart .divider-2 {
@@ -5186,131 +5185,6 @@ body {
     background: #f7f6f4;
     padding: 2%;
     margin-top: 1rem; }
-  .your-app-kickstart .landing-wrapper .howItWorks-section {
-    margin-top: 40px; }
-    .your-app-kickstart .landing-wrapper .howItWorks-section .image-block {
-      width: 25%;
-      position: relative;
-      text-align: center;
-      display: flex;
-      flex-direction: column; }
-      .your-app-kickstart .landing-wrapper .howItWorks-section .image-block .image-circle {
-        margin: 0 auto;
-        padding-bottom: 90%;
-        width: 90%;
-        -moz-border-radius: 50%;
-        -webkit-border-radius: 50%;
-        border-radius: 50%;
-        -moz-box-shadow: inset 0 0 0 1px #0076B6;
-        -webkit-box-shadow: inset 0 0 0 1px #0076B6;
-        box-shadow: inset 0 0 0 1px #0076B6; }
-      .your-app-kickstart .landing-wrapper .howItWorks-section .image-block .image-content {
-        position: absolute;
-        top: 35%;
-        left: 50%;
-        -webkit-transform: translateX(-50%);
-        -ms-transform: translateX(-50%);
-        transform: translateX(-50%); }
-      .your-app-kickstart .landing-wrapper .howItWorks-section .image-block img {
-        width: auto;
-        max-width: 50px; }
-      .your-app-kickstart .landing-wrapper .howItWorks-section .image-block label {
-        display: inline-block;
-        margin-top: 10px;
-        color: #187068; }
-    .your-app-kickstart .landing-wrapper .howItWorks-section .arrow-block {
-      width: 12.5%;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center; }
-      .your-app-kickstart .landing-wrapper .howItWorks-section .arrow-block img {
-        width: auto; }
-  .your-app-kickstart .landing-wrapper .getStarted-section {
-    margin-top: 30px; }
-    .your-app-kickstart .landing-wrapper .getStarted-section .custom-flex-wrap {
-      display: flex;
-      justify-content: space-between; }
-    .your-app-kickstart .landing-wrapper .getStarted-section .input-card-area {
-      width: 50%;
-      display: flex;
-      align-items: center; }
-      .your-app-kickstart .landing-wrapper .getStarted-section .input-card-area .form-group {
-        display: inline-flex;
-        margin-right: 7%; }
-      .your-app-kickstart .landing-wrapper .getStarted-section .input-card-area input {
-        width: 80px;
-        text-align: center;
-        color: #0076B6; }
-        .your-app-kickstart .landing-wrapper .getStarted-section .input-card-area input:last-child {
-          width: 40px;
-          margin-left: 5px; }
-    .your-app-kickstart .landing-wrapper .getStarted-section .message-area {
-      width: 42%; }
-      .your-app-kickstart .landing-wrapper .getStarted-section .message-area #bin-error-message {
-        overflow: hidden;
-        display: none; }
-  .your-app-kickstart .landing-wrapper .aam-designers-section {
-    margin-top: 16px; }
-    .your-app-kickstart .landing-wrapper .aam-designers-section .bordered-block {
-      width: calc(50% - 8px);
-      padding: 0 15px 60px;
-      position: relative; }
-      .your-app-kickstart .landing-wrapper .aam-designers-section .bordered-block:first-child {
-        margin: 0 8px 8px 0; }
-      .your-app-kickstart .landing-wrapper .aam-designers-section .bordered-block:last-child {
-        margin: 0 0 8px 8px; }
-      .your-app-kickstart .landing-wrapper .aam-designers-section .bordered-block button.button {
-        position: absolute;
-        bottom: 15px;
-        left: 15px;
-        margin: 0; }
-    .your-app-kickstart .landing-wrapper .aam-designers-section .features-area .images-block > figure {
-      width: calc(33% - 4px);
-      margin: 2px; }
-      .your-app-kickstart .landing-wrapper .aam-designers-section .features-area .images-block > figure img {
-        -moz-border-radius: 8px;
-        -webkit-border-radius: 8px;
-        border-radius: 8px; }
-    .your-app-kickstart .landing-wrapper .aam-designers-section .accessible-area .images-block > figure {
-      width: calc(50% - 4px);
-      margin: 2px; }
-      .your-app-kickstart .landing-wrapper .aam-designers-section .accessible-area .images-block > figure img {
-        -moz-border-radius: 8px;
-        -webkit-border-radius: 8px;
-        border-radius: 8px; }
-  .your-app-kickstart .landing-wrapper .terms-section {
-    margin: 20px 0 60px; }
-  @media only screen and (min-width: 768px) and (max-width: 991px) {
-    .your-app-kickstart .landing-wrapper .howItWorks-section .image-block .image-content {
-      top: 30%; } }
-  @media only screen and (max-width: 767px) {
-    .your-app-kickstart .landing-wrapper .howItWorks-section .image-block {
-      width: calc(33% - 10px);
-      margin: 0 5px; }
-      .your-app-kickstart .landing-wrapper .howItWorks-section .image-block .image-content {
-        position: static;
-        transform: none; }
-      .your-app-kickstart .landing-wrapper .howItWorks-section .image-block figure {
-        position: absolute;
-        bottom: 45%;
-        left: 50%;
-        -webkit-transform: translateX(-50%);
-        -ms-transform: translateX(-50%);
-        transform: translateX(-50%); }
-    .your-app-kickstart .landing-wrapper .howItWorks-section .arrow-block {
-      display: none; }
-    .your-app-kickstart .landing-wrapper .getStarted-section .custom-flex-wrap {
-      flex-flow: column; }
-    .your-app-kickstart .landing-wrapper .getStarted-section .input-card-area, .your-app-kickstart .landing-wrapper .getStarted-section .message-area {
-      width: 100%; }
-    .your-app-kickstart .landing-wrapper .aam-designer-init .landing-wrapper .getStarted-section .custom-flex-wrap .aam-designers-section .bordered-block {
-      width: 100%; }
-      .your-app-kickstart .landing-wrapper .aam-designer-init .landing-wrapper .getStarted-section .custom-flex-wrap .aam-designers-section .bordered-block:first-child {
-        margin: 0 0 16px 0; }
-      .your-app-kickstart .landing-wrapper .aam-designer-init .landing-wrapper .getStarted-section .custom-flex-wrap .aam-designers-section .bordered-block:last-child {
-        margin: 0 0 16px 0; }
-    .your-app-kickstart .landing-wrapper .terms-section {
-      margin: 15px 0 20px; } }
   .your-app-kickstart .error-container {
     position: fixed;
     top: 11vh;
@@ -5332,9 +5206,17 @@ body {
   font-family: 'Bungee Inline', cursive;
   font-size: 5rem !important;
   line-height: 4rem !important; }
+  @media only screen and (max-width: 767px) {
+    .demo-heading {
+      font-size: 2rem !important;
+      line-height: inherit !important;
+      text-align: center; } }
 
 .main-row {
   display: flex; }
+  @media only screen and (max-width: 767px) {
+    .main-row {
+      flex-direction: column; } }
   .main-row h3 {
     line-height: 39px;
     font-size: 1.2rem; }
@@ -5343,6 +5225,14 @@ body {
     border-right: 2px solid #cfcfcf;
     margin-right: 19px;
     padding-right: 13px; }
+    @media only screen and (max-width: 767px) {
+      .main-row .details {
+        padding: 0;
+        margin: 0;
+        width: 79%;
+        text-align: center;
+        /* max-width: 80%; */
+        border: 0; } }
 
 code,
 kbd,
