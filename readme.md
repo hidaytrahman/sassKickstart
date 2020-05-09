@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://v4-alpha.getbootstrap.com">
+  <a href="https://hidaytrahman.github.io/sassKickstart/">
     <h1 align="center"> SASS Kickstart</h1>
   </a>
 
