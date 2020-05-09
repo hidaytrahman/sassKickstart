@@ -5,3 +5,32 @@
     font-size: 5rem !important;
     line-height: 4rem !important;
 }
+
+.main-row {
+    display: flex;
+
+    h3 {
+        line-height: 39px;
+        font-size: 1.2rem;
+    }
+
+    .details {
+        width: 65%;
+        border-right: 2px solid #cfcfcf;
+        margin-right: 19px;
+        padding-right: 13px;
+    }
+}
+
+code, kbd, pre, samp {
+    background: #dfe0e1;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 5px;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+blockquote {
+    font-size: 16px;
+}

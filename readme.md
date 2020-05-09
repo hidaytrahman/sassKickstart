@@ -64,3 +64,9 @@ Feel free to contribute add more magical stuff and help the dev community.
 
 - <https://www.linkedin.com/in/hidaytrahman>
 - <http://hidaytrahman.github.io>
+
+
+<br>
+<hr>
+<style>.heart{color:#e25555;}</style>
+Made with <span class="heart">❤</span> in India

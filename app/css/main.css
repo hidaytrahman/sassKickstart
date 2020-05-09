@@ -5156,7 +5156,7 @@ body {
     .your-app-kickstart .control.control--checkbox input:disabled ~ .control__indicator:after {
       border-color: #666666; }
   .your-app-kickstart header {
-    background: #eaeaea;
+    background: #f7f6f4;
     padding: 2%; }
     .your-app-kickstart header .logo {
       max-width: 400px; }
@@ -5182,6 +5182,10 @@ body {
   @media only screen and (min-width: 768px) and (max-width: 991px) {
     .your-app-kickstart .page-content-wrapper {
       width: 80%; } }
+  .your-app-kickstart footer {
+    background: #f7f6f4;
+    padding: 2%;
+    margin-top: 1rem; }
   .your-app-kickstart .landing-wrapper .howItWorks-section {
     margin-top: 40px; }
     .your-app-kickstart .landing-wrapper .howItWorks-section .image-block {
@@ -5328,3 +5332,28 @@ body {
   font-family: 'Bungee Inline', cursive;
   font-size: 5rem !important;
   line-height: 4rem !important; }
+
+.main-row {
+  display: flex; }
+  .main-row h3 {
+    line-height: 39px;
+    font-size: 1.2rem; }
+  .main-row .details {
+    width: 65%;
+    border-right: 2px solid #cfcfcf;
+    margin-right: 19px;
+    padding-right: 13px; }
+
+code,
+kbd,
+pre,
+samp {
+  background: #dfe0e1;
+  padding: 5px;
+  border-radius: 5px;
+  margin: 5px;
+  font-size: 17px;
+  font-weight: 600; }
+
+blockquote {
+  font-size: 16px; }
