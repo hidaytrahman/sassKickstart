@@ -4915,16 +4915,16 @@ body {
   .your-app-kickstart h6 {
     margin: 1.5rem 0;
     font-weight: 500;
-    color: #00395D; }
+    color: #187068; }
   .your-app-kickstart h1 {
     font-size: 2.5rem;
     line-height: 3rem; }
   .your-app-kickstart h2 {
-    color: #0074A6;
+    color: #009688;
     font-size: 1.7rem;
     line-height: 2rem; }
   .your-app-kickstart h3 {
-    color: #00395D;
+    color: #187068;
     font-size: 1.6rem;
     line-height: 1.5rem; }
   .your-app-kickstart h4 {
@@ -5005,8 +5005,8 @@ body {
     display: inline-block;
     padding: 10px 19px;
     font-size: 0.9rem;
-    color: #0e93c9;
-    border: 1px solid #0e93c9;
+    color: #009688;
+    border: 1px solid #009688;
     margin: 5px 0;
     background: transparent;
     min-width: 150px;
@@ -5018,10 +5018,10 @@ body {
     -o-transition: 0.3s ease;
     transition: 0.3s ease; }
     .your-app-kickstart button.button.primary {
-      background: #0e93c9;
+      background: #009688;
       color: #ffffff; }
       .your-app-kickstart button.button.primary:hover {
-        background: #00395D;
+        background: #187068;
         color: #ffffff; }
       .your-app-kickstart button.button.primary:disabled {
         border-color: transparent;
@@ -5040,8 +5040,8 @@ body {
     .your-app-kickstart button.button.small {
       font-size: 0.8rem; }
     .your-app-kickstart button.button:hover {
-      border-color: #00395D;
-      color: #00395D; }
+      border-color: #187068;
+      color: #187068; }
   .your-app-kickstart input.input {
     background: #ffffff;
     border: 1px solid #909090;
@@ -5068,7 +5068,7 @@ body {
       -webkit-border-radius: 8px;
       border-radius: 8px;
       border: 1px solid #D9D9D9;
-      color: #0074A6;
+      color: #009688;
       appearance: none;
       -webkit-appearance: none;
       -moz-appearance: none;
@@ -5088,7 +5088,7 @@ body {
       pointer-events: none;
       border-style: solid;
       border-width: 8px 5px 0 5px;
-      border-color: #0074A6 transparent transparent transparent; }
+      border-color: #009688 transparent transparent transparent; }
   .your-app-kickstart .control {
     display: block;
     position: relative;
@@ -5101,13 +5101,13 @@ body {
       background: #c4c4c4; }
     .your-app-kickstart .control:hover input:not([disabled]):checked ~ .control__indicator,
     .your-app-kickstart .control input:checked:focus ~ .control__indicator {
-      background: #00395D; }
+      background: #187068; }
     .your-app-kickstart .control input {
       position: absolute;
       z-index: -1;
       opacity: 0; }
       .your-app-kickstart .control input:checked ~ .control__indicator {
-        background: #0e93c9; }
+        background: #009688; }
       .your-app-kickstart .control input:disabled ~ .control__indicator {
         background: #F7F7F7;
         opacity: 0.6;
@@ -5178,7 +5178,7 @@ body {
     border-radius: 8px;
     padding: 0 15px 15px; }
   .your-app-kickstart *:focus {
-    outline: #0074A6 dotted 1px; }
+    outline: #009688 dotted 1px; }
   @media only screen and (min-width: 768px) and (max-width: 991px) {
     .your-app-kickstart .page-content-wrapper {
       width: 80%; } }
@@ -5217,7 +5217,7 @@ body {
       .your-app-kickstart .landing-wrapper .howItWorks-section .image-block label {
         display: inline-block;
         margin-top: 10px;
-        color: #00395D; }
+        color: #187068; }
     .your-app-kickstart .landing-wrapper .howItWorks-section .arrow-block {
       width: 12.5%;
       display: inline-flex;
