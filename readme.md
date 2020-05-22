@@ -64,10 +64,9 @@ Feel free to contribute add more magical stuff and help the dev community.
 
 
 ## Creators
-**Hidayt Rahman**
+[**Hidayt Rahman**](http://hidaytrahman.github.io)
 
-- [LinkedIn](https://www.linkedin.com/in/hidaytrahman)
-- [About](http://hidaytrahman.github.io)
+[LinkedIn](https://www.linkedin.com/in/hidaytrahman)
 
 
 <br>
