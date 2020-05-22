@@ -7,7 +7,7 @@
 
   <p align="center">
     <strong>SASS Kickstart</strong> will help you to setup readymade stuff for your future project.  <br><br> 
-    It will help you to not care about of bunch of SASS structures with <code>variables, mixins, functuins, placeholders</code> etc.
+    It will help you to not care about of bunch of SASS structures with <code>variables, mixins, functions, placeholders</code> etc.
     <br>
      <br>
 
