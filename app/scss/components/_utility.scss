@@ -6,10 +6,6 @@
 }
 
 /* ------------ Margin Classes ------------ */
-
-
-
-/* ------------ Margin Classes ------------ */
 @for $i from $utilityLoopStart through $utilityLoopEnd {
     .margin-#{$i} {
         margin: #{$i}px;
@@ -65,19 +61,27 @@
 
 
 /* ------------ Alignments Classes ------------ */
-.text-centre,
-// British or US English spellings..
-.text-center {
-    text-align: center;
+
+.text {
+
+    &-centre,
+    // British or US English spellings..
+    &-center {
+        text-align: center;
+    }
+
+    &-left {
+        text-align: left;
+    }
+    &-right {
+        text-align: right;
+    }
+
+    &-justify {
+        text-align: justify;
+    }
 }
 
-.text-left {
-    text-align: left;
-}
-
-.text-right {
-    text-align: right;
-}
 
 
 // https://justmarkup.com/log/2015/07/dealing-with-long-words-in-css/

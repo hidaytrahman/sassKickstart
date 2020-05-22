@@ -386,6 +386,18 @@ th {
 We have to upgrade it according to our use cases
 */
 /*
+@function calculate-width ($col-span) {
+    @return 100% / $col-span;
+}
+*/
+/*
+
+Use case
+.span-two {
+    width: calculate-width(2); // spans 2 columns, width = 50%
+}
+*/
+/*
 NOT SUPPORTED
 USe case
 %bg-image {
@@ -425,18 +437,6 @@ USe case
   color: #333333;
   margin: 0.5rem 0; }
 
-/*
-@function calculate-width ($col-span) {
-    @return 100% / $col-span;
-}
-*/
-/*
-
-Use case
-.span-two {
-    width: calculate-width(2); // spans 2 columns, width = 50%
-}
-*/
 /* IMPORT FONTS Here */
 @font-face {
   font-family: "Jost-Regular";
@@ -474,7 +474,6 @@ body {
   transition: opacity 0.15s linear;
   /* ------- Components Styles -------*/
   /* ------------ divider Classes ------------ */
-  /* ------------ Margin Classes ------------ */
   /* ------------ Margin Classes ------------ */
   /* ------------ Margin Classes ------------ */
   /* ------------ Padding Classes ------------ */
@@ -4889,13 +4888,14 @@ body {
     padding-bottom: 200px; }
   .your-app-kickstart .padding-left-200 {
     padding-left: 200px; }
-  .your-app-kickstart .text-centre,
-  .your-app-kickstart .text-center {
+  .your-app-kickstart .text-centre, .your-app-kickstart .text-center {
     text-align: center; }
   .your-app-kickstart .text-left {
     text-align: left; }
   .your-app-kickstart .text-right {
     text-align: right; }
+  .your-app-kickstart .text-justify {
+    text-align: justify; }
   .your-app-kickstart .hyphenate {
     overflow-wrap: break-word;
     word-wrap: break-word;

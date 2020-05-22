@@ -4,7 +4,12 @@
 @import "./vendor/vendor.scss";
 
 /* BASE CSS FOR ALL COMPONENTS STYLING */
-@import "./base/_base.scss";
+@import "./base/_variables";
+@import "./base/_mixins";
+@import "./base/_functions";
+@import "./base/_placeholders";
+
+
 
 @import "./components/fonts.scss";
 
@@ -38,7 +43,7 @@ body {
 
     /* ------- Components Styles -------*/
     
-    @import "./components/utility.scss";
+    @import "./components/utility";
     @import "./components/typography.scss";
     @import "./components/notification.scss";
     @import "./components/formControls.scss";
