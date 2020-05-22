@@ -68,5 +68,5 @@ Feel free to contribute add more magical stuff and help the dev community.
 
 <br>
 <hr>
-<style>.heart{color:#e25555;}</style>
-Made with <span class="heart">❤</span> in India
+
+Made with <span style="color:#e25555">❤</span> in India
