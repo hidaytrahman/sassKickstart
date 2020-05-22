@@ -24,6 +24,9 @@ You will get theming as well for the required stuff like ```form elements``` , `
 
 You will also get all the required mixins which we always use in project.
 
+### Demo
+[Demo and Examples](https://hidaytrahman.github.io/sassKickstart/docs/)
+[Documents](https://github.com/hidaytrahman/sassKickstart/tree/master/docs)
 
 <hr>
 
@@ -62,8 +65,8 @@ Feel free to contribute add more magical stuff and help the dev community.
 ## Creators
 **Hidayt Rahman**
 
-- <https://www.linkedin.com/in/hidaytrahman>
-- <http://hidaytrahman.github.io>
+- [LinkedIn](https://www.linkedin.com/in/hidaytrahman)
+- [About](http://hidaytrahman.github.io)
 
 
 <br>
