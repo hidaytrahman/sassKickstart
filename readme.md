@@ -25,8 +25,9 @@ You will get theming as well for the required stuff like ```form elements``` , `
 You will also get all the required mixins which we always use in project.
 
 ### Demo
-[Demo and Examples](https://hidaytrahman.github.io/sassKickstart/docs/)
-[Documents](https://github.com/hidaytrahman/sassKickstart/tree/master/docs)
+See the [Demo and Examples](https://hidaytrahman.github.io/sassKickstart/docs/)
+
+and start implmenting by following this [Documents](https://github.com/hidaytrahman/sassKickstart/tree/master/docs)
 
 <hr>
 
