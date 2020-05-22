@@ -22,6 +22,9 @@ $btn-secondary-border-color: #D9D9D9;
 $btn-secondary-color: #666666;
 $disabled-color: #666666;
 
+$btn-warning-bg: #5b6261;
+$btn-warning-bg-hover: darken($btn-warning-bg, 20%);
+
 $message-error-color: red;
 $message-error-light: lighten($message-error-color, 40%);
 $message-success-color: green;

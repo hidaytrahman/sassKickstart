@@ -12,6 +12,18 @@
     }
 }
 
+button {
+    &.button {
+        &.custom-btn {
+            margin-top: -13px;
+            background: #f7f6f4;
+            border: 0;
+            border-radius: 0;
+        }
+    }
+}
+
+
 .main-row {
     display: flex;
 

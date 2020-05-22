@@ -48,6 +48,17 @@
         }
       }
 
+      &.warning {
+        background: $btn-warning-bg;
+        border-color: $btn-warning-bg-hover;
+        color: $white-color;
+
+        &:hover {
+          background: $btn-warning-bg-hover;
+          color: $white-color;
+        }
+      }
+
       &.large {
         font-size: 1.3rem;
       }

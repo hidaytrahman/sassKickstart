@@ -5034,6 +5034,13 @@ body {
         background: #c4c4c4;
         border-color: transparent;
         color: #333333; }
+    .your-app-kickstart button.button.warning {
+      background: #5b6261;
+      border-color: #2a2d2d;
+      color: #ffffff; }
+      .your-app-kickstart button.button.warning:hover {
+        background: #2a2d2d;
+        color: #ffffff; }
     .your-app-kickstart button.button.large {
       font-size: 1.3rem; }
     .your-app-kickstart button.button.small {
@@ -5211,6 +5218,12 @@ body {
       font-size: 2rem !important;
       line-height: inherit !important;
       text-align: center; } }
+
+button.button.custom-btn {
+  margin-top: -13px;
+  background: #f7f6f4;
+  border: 0;
+  border-radius: 0; }
 
 .main-row {
   display: flex; }
