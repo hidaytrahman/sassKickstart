@@ -4,8 +4,8 @@
   "description": "SASS KickStart",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "scss": "node-sass --watch app/scss -o app/css"
+    "scss": "node-sass --watch app/scss -o app/css",
+    "scss:build": "node-sass app/scss/main.scss public/css/style.min.css --output-style compressed"
   },
   "keywords": [
     "sass"
