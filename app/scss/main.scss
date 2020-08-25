@@ -9,8 +9,6 @@
 @import "./base/_functions";
 @import "./base/_placeholders";
 
-
-
 @import "./components/fonts.scss";
 
 html {
@@ -28,6 +26,7 @@ body {
     box-sizing: border-box;
 }
 
+// this is root class
 .your-app-kickstart {
     position: relative;
     font-size: 12px;
