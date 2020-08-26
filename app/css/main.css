@@ -479,6 +479,8 @@ body {
   /* ------------ Padding Classes ------------ */
   /* ------------ Padding Classes ------------ */
   /* ------------ Alignments Classes ------------ */
+  /* ------------ hide/show ------------ */
+  /* ------------ Fade classes ------------ */
   /* Buttons */
   /* INPUT - text, email, number, file */
   /* Dropdown */
@@ -4900,10 +4902,20 @@ body {
     overflow-wrap: break-word;
     word-wrap: break-word;
     hyphens: auto; }
+  .your-app-kickstart .mobile-show-hide {
+    display: none; }
   .your-app-kickstart .mobile-show-block {
-    display: none; }
+    display: block; }
   .your-app-kickstart .mobile-show-flex {
-    display: none; }
+    display: flex; }
+  .your-app-kickstart .visible {
+    visibility: visible !important; }
+  .your-app-kickstart .invisible {
+    visibility: hidden !important; }
+  .your-app-kickstart .fade-0 {
+    opacity: 0 !important; }
+  .your-app-kickstart .fade-1 {
+    opacity: 1 !important; }
   .your-app-kickstart img {
     width: 100%; }
   .your-app-kickstart h1,

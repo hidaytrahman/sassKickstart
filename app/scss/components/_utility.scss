@@ -91,10 +91,41 @@
     hyphens: auto;
 }
 
-.mobile-show-block {
+
+
+
+/* ------------ hide/show ------------ */
+.mobile-show-hide {
     display: none;
 }
 
-.mobile-show-flex {
-    display: none;
+.mobile-show-block {
+    display: block;
 }
+
+.mobile-show-flex {
+    display: flex;
+}
+
+.visible {
+    visibility: visible !important;
+}
+
+.invisible {
+    visibility: hidden !important;
+}
+
+/* ------------ Fade classes ------------ */
+.fade-0 {
+    opacity: 0 !important;
+}
+
+.fade-1 {
+    opacity: 1 !important;
+}
+
+
+
+// TODO : Responsive text alignment classes
+// TODO : Responsive marging and padding classes
+// TODO : More Utilities Dedicated CSS Properties .pos-abs, pos-rel, pos-fix,

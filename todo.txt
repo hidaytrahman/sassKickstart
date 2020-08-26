@@ -7,10 +7,9 @@
 - Code Refactors
 
 ## Configurations
-
  - SASS Folder Strucutre
  - CSS one structure
-
+ - excluse theme in seperate SCSS or write some flag for better option to combine theme in one main.css
 
 ## Advance
 - Packages components
